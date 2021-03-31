@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+.main_detcat_P{
+	width:750px;
+	overflow:hidden;
+	float:left;
+	margin-top:10px;
+	margin-left:15px;
+	margin-bottom:50px;
+	}
+.iz_detcat_P{
+	overflow:hidden;
+	text-align:left;
+	float:left;
+	width:420px;
+	margin-left:25px;
+	}
+.iz_detcat_P h1{
+	padding: 0px;
+	margin: 0px;
+	text-align:left;
+	font-weight:normal;
+	font-size:18px;
+	color:#FE0000;
+	}
+.iz_detcat_P p{
+	text-align:left;
+	padding: 0px;
+	margin: 0px;
+	font-size:14px;
+	color:#666;
+	}
+	
+.de_detcat_P{
+	overflow:hidden;
+	height:100%;
+	float:left;
+	width:290px;
+/*	margin-left:25px;*/
+
+	}
+.de_detcat_P div{
+	height:100%;
+	overflow:hidden;
+	float:left;
+	}
+.de_detcat_de_P{	
+	overflow:hidden;
+	padding: 0 15px 0 15px;
+}
+.de_detcat_P div h1{
+	text-align:left;
+	color:#669B33;
+	
+	}
+.de_detcat_P div p{
+	text-align:left;
+	overflow:hidden;
+	}
+.de_detcat_de_ima_P{
+	height:100%;
+	overflow:hidden;
+	width:230px;
+}
+.derecha_P{
+	float:left;
+	overflow:hidden;
+	width:100%;
+	}
+.titulo_categoria{
+	font-size: 19px;
+	color:#000;
+	margin-bottom:10px;
+}

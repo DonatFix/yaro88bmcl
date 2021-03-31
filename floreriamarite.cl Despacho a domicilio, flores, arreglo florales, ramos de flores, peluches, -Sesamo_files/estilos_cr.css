@@ -1,0 +1,928 @@
+@charset "utf-8";
+@import "ddlevelsmenu-base.css";
+@import "ddlevelsmenu-topbar.css";
+@import "ddlevelsmenu-sidebar.css";
+/*@import "Contenedor_base.css";*/
+@import "det_cat.css";
+/*@import "Contenedor_producto.css";*/
+@import "jquery.tooltip.css";
+
+@font-face {
+	font-family: 'gothic';
+	src: url('./gothic.eot');
+	src: local('gothic'), url('./gothic.woff') format('woff'), url('./gothic.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_9785">Text with this font applied</p> */
+
+
+
+/* CSS Document */
+.top{
+	position:relative;
+	margin-top:0px;
+	position:relative;
+	height:200px;
+	/*background:#680D38;*/
+	}
+.cont_top{
+	box-shadow: -5px 0 5px -5px rgba(0,0,0,0.2), 5px 0 5px -5px rgba(0,0,0,0.2);
+	position:relative;
+	width:1000px;
+	height:200px;
+	border-top: solid #F3F3F5 0px;
+	/*border-right: solid #F3F3F5 10px;
+	border-left: solid #F3F3F5 10px;*/
+	background:#FFFFFF;
+	/*border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	
+	background: #FFF; /* top right no-repeat URL('../images/rosas_top.png');*/
+	/*box-shadow: -5px 0 5px -5px #666, 5px 0 5px -5px #666;*/
+	margin-top:0px;
+	}
+.top_bar{
+	position:absolute;
+	z-index:5;
+	top:15px;
+	left:515px;
+	float:none;
+	width:490px;
+	height:34px;
+	margin-top:0px;
+	margin-right:10px;
+//	font-family: 'gothic';
+	//background: no-repeat URL('../images/fond_menutop.png') ;
+	//background:url(../img/barra_top.jpg) repeat-x;
+	float:right;
+	}
+.list_derecha{
+	margin-left:0px;
+	margin-top:21px;
+	cursor:pointer;
+	position:relative;
+	float:left;
+    font-family: 'gothic';
+    font-size: 11px;
+	/*font-weight:bold;
+    color: #FFF;
+	background:#601A4C;*/
+	height:45px;
+	}
+.list_derecha a{
+	padding-left:16px;
+	padding-right:12px;
+	padding-top:15px;
+	padding-bottom:5px;
+	text-decoration:none;
+	border:none;
+	font-family: 'gothic';
+    font-size: 15px;
+    color: #FFF;
+	height:45px;
+	
+	}
+.list_derecha a:hover{
+	height:45px;
+	background:rgba(0,255,255,0.1);
+
+}
+.top_mid{
+	width:985px;
+	height:120px;
+/*	background:#06F;*/
+	position:absolute;
+	top:25px;
+	overflow:hidden;
+	
+	}
+.top_mid a{
+	width:200px;
+}
+.logo{
+	position:absolute;
+		cursor:pointer;
+	margin-top:8px;
+	margin-left:20px;
+	width:200px;
+	height:100px;
+	background: no-repeat URL(../images/logo.png) ;
+	}	
+.top_foot{
+	position:relative;
+	float:left;
+	width:985px;
+	height:30px;
+	border-right: solid #D2D2D2 1px;
+	border-left: solid #D2D2D2 1px;
+	margin-left:-1px;
+	margin-bottom:-10px;
+//	background:#0CF;
+	}
+.top_foot_car{
+	position:relative;
+	float:left;
+	width:985px;
+	height:0px;
+	//background:#FF0;
+	}	
+.contenedor{
+	position:relative;
+/*	height:910px;
+	background:#680D38;*/
+	//opacity:0.6;
+	}
+.contenedor_cenro{
+/*	border-left: solid #D2D2D2 1px;
+	border-right: solid #D2D2D2 1px;*/
+	/*border-right: solid #F3F3F5 10px;
+	border-left: solid #F3F3F5 10px;*/
+
+	min-height:600px;
+	width:1000px;
+	overflow: hidden;
+	background:#FFFFFF;
+	box-shadow: -5px 0 5px -5px rgba(0,0,0,0.2), 5px 0 5px -5px rgba(0,0,0,0.2);
+	margin-bottom:-10px;
+	margin-top:0px;
+	//padding-top:70px;
+	}
+.contenedor_cenro_ind{
+	width:1000px;
+	overflow: hidden;
+	background:#FFF;
+	box-shadow: -5px 0 5px -5px rgba(0,0,0,0.2), 5px 0 5px -5px rgba(0,0,0,0.2);
+	margin-bottom:-10px;
+	margin-top:0px;
+	
+}		
+.baner{
+	width:985px;
+	height:20px;
+	}
+.contenedor_footer{
+	margin-top:10px;
+	border-top:2px solid #F6C4C5;
+	//height:400px;
+	background:#FFF;
+//	opacity:0.6;
+height:100px;
+	}
+.contenedor_cenro_footer{
+/*	padding-top:80px;*/
+		padding-top:20px;
+	width:985px;
+	background: #FFF;
+	width:1000px;;
+/*	border-right: solid #D2D2D2 1px;
+	border-left: solid #D2D2D2 1px;*/
+
+	/*height:400px;
+/*	background:#333;
+	opacity:0.6;*/
+}
+.contenedor_cenro_footer div{
+/*	width:985px;
+	height:400px;
+/*	background:#333;
+	opacity:0.6;*/
+}
+
+/*/////////////////SLIDE/////////////////////////////////////////////////////////////*/
+#container {
+	float:left;
+	position:relative;
+	width:100%;
+	/*height:180px;*/
+	overflow:hidden;
+	padding:0px;
+	position:relative;
+	z-index:1000;
+	margin-left:25px;
+}
+
+#example {
+	width:740px;
+	height:345px;
+	position:relative;
+	border:1px solid #CCC;
+	padding:5px;
+	
+	/*background: #666;*/
+	
+}
+
+#ribbon {
+	position:absolute;
+	top:-3px;
+	left:-15px;
+	z-index:500;
+}
+
+/*
+	Slideshow
+*/
+
+#slide {	position:absolute;
+	top:0px;
+	left:200px;
+	z-index:100;
+
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:740px;
+	height:345px;
+	/*overflow:hidden;
+	position:relative;*/
+	display:none;
+/*box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.18);*/
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:740px;
+	height:345px;
+	display:block;
+	margin-top:-2px;
+	margin-left:1px;
+}
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:295px;
+	left:6px;
+	width:53px;
+	height:73px;
+	display:block;
+	z-index:40000;
+}
+
+#slides .next {
+	left:876px;
+}
+#slider_pag{
+	float:left;
+	z-index:1002;
+	}
+.pagination {
+    width: 200px;
+    text-align: center;
+    bottom: 10px;
+    position: absolute;
+    right: 223px;
+
+    z-index: 90000;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:25px;
+	height:0;
+	padding-top:21px;
+	background-image:url(../images/verde.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+.pagination li.current a {
+	background-image:url(../images/verde2.png);
+}
+/*///////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/*CLASS PARA PAGINADOR*/
+#tabs_paginador_main{
+	padding-left:250px;
+	padding-top:0px;}
+.paginador {
+	text-align:center;
+	list-style:none;
+	padding:0;
+	margin-top: 15px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+#mostrar_todo {
+	color:#FFFFFF;
+	float:right;
+	position:relative;
+	width:100px;
+	font-size:12px;
+	text-align:center;
+	background-color:#497E3A;
+	border:#E8E8E8 solid 1px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+#mostrar_todo a{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+#mostrar_todo a:hover{
+	color:#000000;
+	text-decoration: none;
+	font-style: oblique;
+	font-weight: bolder;
+}
+.paginador td {
+	margin:2px auto;
+	padding:0;
+	float:left;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	display:inline;
+	text-align:center;
+	width:40px;
+}
+
+.paginador td a {
+	display:block;
+	width:35px;
+	height:25px;
+	padding-top:5px;
+	text-decoration:none;
+	text-align:center;
+	font-size:12px;
+	color:#FFFFFF;
+	background-color:#F0C;
+	border:#E8E8E8 solid 1px;
+	border-radius: 8px;
+
+}
+
+.paginador td a:hover {
+	font-weight:bold;
+	background-color:#9E149F;
+}	
+/*FIN CLASS PARA PAGINADOR*/
+
+.boron_delics_inp{
+	padding:0 5px 0px 5px;
+	text-decoration:none;
+	border:none;
+	text-align:center;
+	color:#FFFFFF;
+	background: URL(../images/fond_cpahora.png) repeat-x;
+	text-align:center;
+	vertical-align:middle;
+	padding: 5px 15px 5px 15px;
+	font-size:14px;
+	margin-top:10px;
+/*	border:2px solid rgba(246, 106, 9,0.6);*/
+	border-radius:10px;
+	font-weight:bold;
+	}
+.boron_delics_inp :active{
+	padding: 4px 4px 4px 4px;
+	box-shadow: 0px 0px 0px 0px #000;
+	border:none;
+	text-align:center;
+	color:#FFFFFF;
+	}
+.boron_delics_inp a{
+	border:none;
+	text-align:center;
+	color:#FFFFFF;
+	}	
+.boton_compra_ahora{
+	padding:10px;
+	text-decoration:none;
+	border:none;
+	text-align:center;
+	color:#FFFFFF;
+	text-align:center;
+	vertical-align:middle;
+	padding: 5px 5px 5px 5px;
+	font-size:18px;
+	margin:15px 0px 0px 0px;
+	width:110px;
+	font-size:12px;
+	font-weight:bold;
+	line-height:12px;
+	cursor:pointer;
+	//border-radius:0px;
+	background:url(../images/comprar.png) no-repeat center;
+	float:left;
+	position:relative;
+	//border-radius:10px
+}
+.boton_compra_ahora_foot{
+	float:left;
+	padding:0 5px 0px 5px;
+	text-decoration:none;
+	border:none;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#95CF23;
+	border-radius: 18px;
+	border-top-left-radius: 15px 25px;
+	border-bottom-left-radius:15px 25px;
+	border-top-right-radius: 15px 25px;
+	border-bottom-right-radius:15px 25px;
+	text-align:center;
+	vertical-align:middle;
+	padding: 5px 5px 5px 5px;
+	font-size:18px;
+	margin:10px;
+	width:70px;
+	font-size:12px;
+	font-weight:bold;
+	line-height:12px;
+	box-shadow: 0px 1px 3px 0px #000;
+	cursor:pointer;
+	}	
+	
+	/*/////////CLASSES CARRO //////////////////////*/
+.linkcarro_compra{
+	text-decoration:none;
+	border:none;
+	color:#003;
+	}
+	/*//////////////////////////////////////////////*/
+	
+	
+	
+	/* ///////////////DATA CONTENIDO///////////////////////////////////// */
+	.contenido {
+	height: auto;
+	width: 865px;
+	max-width:865px;
+/*	margin-top: 20px;*/
+	margin-left:20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-right: 25px;
+	padding-bottom: 110px;
+	padding-left: 25px;
+	border-radius: 3px;
+	/*box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);*/
+	float: left;
+	/*border:#CCC 1px solid;*/
+}
+.contenido h1{
+	font-size: 24px;
+	color: #9E149F;
+	font-weight:normal;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+	border-radius:3px;
+	margin-top: -5px;
+	border-bottom-width: 1px;
+	border-bottom-color: #7E52B1;
+}
+.contenido p{
+
+	font-size: 11px;
+/*	width: 470px;*/
+	text-align: justify;
+	color: #000000;
+	margin-top: 40px;
+}
+.contenido img{
+	float: right;
+	height: auto;
+	margin-bottom: 20px;
+}
+	/* /////////////////////////////////////////////////////////////////// */
+	
+	
+	.SubTitulo_Pagina
+{
+  font-family: 'gothic';
+  font-size: 16px;
+  color: #666666;
+  font-weight: normal;
+}
+
+#TextosCategoria
+{
+  height: 200px;
+  width: 320px;
+  padding-left: 15px;
+  padding-top: 30px;
+  float: left;
+}
+.agregues{
+	width:100%;
+	float:left;
+	margin-left:25px;
+	
+}
+.agregues_tit{
+	float:left;
+	font-size:20px;
+	color:#A0A0A0;
+	font-weight:400;
+	width:280px;
+	margin-bottom:5px;
+	}
+.agregues_tit_ob{
+	float:left;
+	text-align:left;
+	font-size:20px;
+	color:#9E149F;
+	width:555px;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:5px;
+
+	margin-bottom:5px;
+	margin-left:5px;
+	font-weight:normal;
+	font-style:italic;
+	}	
+.agre_blok{
+	border:#99CC33 0px solid;
+	margin-bottom: 25px;
+	width:99.6%;
+	margin-left:5px;	
+	float:left;
+	overflow:hidden
+}
+.agre_tit_m{
+	width:100%;
+	overflow:hidden;
+}
+.agre_tit{
+	float:left;
+	width:55%;
+	background:#E567A6;
+	color:#FFF;
+	font-size:18px;
+	font-weight:400;
+	
+}
+.prev_producto_agre{
+float:left;
+/*height: 175px;*/
+width: 112px;
+padding:10px 4px 10px 4px;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:3px;
+}
+.prev_producto_agre:hover{
+-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+}
+.prev_producto_agre div img{
+	max-width:100px;
+	max-height:110px;
+	}
+.prev_producto_agre_sin_h{
+float:left;
+height:50px;
+width: 112px;
+}
+
+.DatosEmpresa
+{
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  width: 940px;
+  padding-top: 10px;
+}
+.alinear_derecha
+{
+  text-align: right;
+}
+.Bold{
+	font-weight: bold;
+}
+.MenuInferior {
+    margin: auto;
+    width: 964px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+    clear: both;
+    overflow: auto;
+}
+.MenuInferiorlinks {
+    float: left;
+    width: 240px;
+    padding-top: 10px;
+	font-size:14px
+}
+.MenuInferior a {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+  
+    margin-top: 2px;
+	font-size:12px;
+}
+.MenuInferiorlinks ul{
+	padding:0px;
+	margin:0px;
+}
+.MenuInferiorlinks ul li{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+
+p {
+    margin: 0px;
+}
+.search{
+	position:absolute;
+	top:168px;
+	left:250px;
+	z-index:3;
+	margin-top:-25px;
+	margin-left:-50px;
+	height:30px;
+	width:210px;
+	background:url(../images/buscar.png);
+	//visibility:hidden;
+}
+.search ul {
+    list-style: none outside none;
+	margin-top:80px;
+	margin-left:77px;
+}
+.search ul li input {
+	position:absolute;
+    //float: left;
+    width: 150px;
+    height: 18px;
+	left:8px;
+	top:7px;
+   // line-height: 30px;
+    padding: 0px 0px;
+	//margin-top:3px;
+   // background-image: url("../images/search_bar.gif");
+    background-repeat: no-repeat;
+    border: 0px solid rgb(204, 204, 204);
+    color: rgb(170, 170, 170);
+}
+.btn_ir{
+	border:none;
+
+	background-color:#CC0001;
+}
+.ver_carro{
+	position:absolute;
+	float:left;
+	overflow:hidden;
+	margin-left:500px;
+	cursor:pointer;
+	z-index:300;
+	width:150px;
+	background:URL(../images/carro.png) no-repeat;
+	background-position:0% 50%;
+}
+.TIT_RESULT_BUSQUEDA{
+
+	font-size:20px;
+}
+.fonotop{
+	width:262px;
+	height:91px;
+	background: no-repeat #FFF URL("../images/grafica_superior_masrosas.png");
+	margin-top:35px;
+	margin-left:475px;
+}
+input {
+    font-size: 11px;
+}
+
+.search .inputgo{
+	cursor: pointer;
+	float: left;
+	left:160px;
+    width: 50px;
+    height: 20px;
+	top:10px;
+	//background: center url("../images/lupa_.png");
+    //background-repeat: no-repeat;
+	background:none;
+	border:none;
+	
+	}
+h4{
+	font-size:10px;
+font-weight:normal;
+}	
+.div_precio{
+	overflow:hidden;
+	margin-top:-28px;
+	width:100%;
+	margin-left:-40px;
+}
+.div_precio ul{
+	text-decoration:none;
+	list-style:none;
+}
+.div_precio ul li{
+	width:230px;
+	float:left;
+	font-size:14px;
+	padding:2px 0px 2px 0px;
+}
+.div_precio ul li:hover{
+	background:#CCC;
+	}
+.div_precio ul li a{
+	text-decoration:none;
+	color:#6E6E6E;
+}
+.pagination_div{ position:absolute;
+	margin-left:880px;
+	z-index:1002;
+	margin-top:-40px;
+}
+
+.btn_menu_left {
+	margin-top:10px;
+	font-size:12px;
+	width: 98%;
+	text-align: left;
+	font-weight:bold;
+	background-color: #FFFFFF;/**/
+	font-size: 25px;
+	color: #4A901C;
+	padding-top: 0px;
+	padding-bottom: 1px;
+	font-family: 'gothic';
+	margin-left:14px;
+	
+}
+.btn_menu_left a{
+	color: #787878; /*999999;*/
+	font-size:12px;
+	font-weight:400;
+	display: block;
+	text-decoration: none;
+	/*height: 19px;*/
+	border-bottom:1px solid #BF9D78;
+	padding-bottom: 3px;
+	font-family: 'gothic';
+}
+
+
+.btn_menu_left a:hover{
+	color: #000000;
+	border-bottom:1px solid #FF2B01;
+}
+.subcats{
+/*	display:none;*/
+}
+.subcats a{
+	border-bottom:1px dotted #FF2B01;
+}
+.menu_titulo{
+	font-size:20px;
+	color:#C1429B;
+	margin-left:14px;
+	
+	height:40px;
+	line-height:2;
+	padding-left:5px;
+	background:url(../images/titulo_menu.png) no-repeat ;
+	width:200px;
+	 
+	font-family: 'gothic';
+	border-bottom:#E567A7 solid 2px;;	
+	}
+.VerCarro{
+	position:absolute;
+	background:url(../images/carro_buscar.png);
+	height:40px;
+	width:182px;
+	overflow:hidden;
+	z-index:5;
+	top:90px;
+	right:210px;
+	cursor:pointer;
+	right:25px;
+	}
+
+
+#facebook_side {
+background-image: url(../images/facebook_side.png);
+background-repeat: no-repeat;
+height: 96px;
+width: 43px;
+top: 300px;
+display:scroll;
+position:fixed;
+right:0px;
+float: right;
+margin-right: 0px;
+background-position: 0px 0px;
+z-index:8000;
+}
+#facebook_side:hover {
+display: block;
+background-position: 0px -96px;
+}
+body{
+	font-size: 11px;
+    color: #666;
+	background: url("../img/bg-body.jpg") no-repeat fixed center top transparent;
+	font-family: "gothic";
+	margin:0px;
+	}
+	
+.thumbs{
+	margin-top:10px; margin-left:10px;
+	text-align:center
+}
+.thumbs a{
+	margin-left:10px;
+}
+.thumbs a img{
+	padding:2px;
+	background:#9E149F;
+	border: 1px solid #FD6A0D;
+	overflow:hidden;
+	transition:ease 0.5s;
+	opacity:0.7;
+}
+
+.thumbs a img:hover{
+	padding:2px;
+	background:#9E149F;
+	border: 1px solid #FD6A0D;
+	overflow:hidden;
+	opacity:1;
+}
+.menu_top_contenedor{
+	margin-top:50px;
+	position:absolute;
+	margin-left:10px;
+	margin-top:145px;
+	width:98%;
+	background:url(../images/linea_menu.png) repeat-x;
+	height:45px;
+	
+	}
+.lined{
+	background:URL(../images/line.png) no-repeat left;
+	margin-top:0px;
+	line-height:3.2;
+	//transition:ease 2s;
+}
+.lined :hover{
+	background:none;
+	background:URL(../images/l_menu_cambiuo.png) repeat-x left;
+	padding-bottom:10px;
+	
+}
+.linei{
+}
+.modulo_derecho{
+	margin-left:10px;
+	width:760px;
+}
+.modulo_iz{
+	width:210px;
+	}
+.destacados_productos2{
+	float:left;
+	
+		}
+.estilo_limpio li {
+    display: list-item;
+}
